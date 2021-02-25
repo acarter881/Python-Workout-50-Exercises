@@ -11,3 +11,10 @@ def firstlast(sequence):
 print(firstlast('abcdefg'))       # String
 print(firstlast([1,2,3,4,5,'a'])) # List
 print(firstlast((1,2,5,'w')))     # Tuple
+
+"""
+<BETTER SOLUTION>
+def firstlast(sequence):
+    return sequence[:1] + sequence[-1:]
+</BETTER SOLUTION>
+"""
