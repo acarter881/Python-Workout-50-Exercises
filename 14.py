@@ -16,7 +16,7 @@ def restaurant():
         if not order:
             print(f'Your total is ${total:.2f} dollars.')
             break
-        if order in MENU:
+        elif order in MENU:
             total += MENU[order]
             print(f'{order} costs ${MENU[order]:.2f} dollars; total is ${total:.2f} dollars.\n')
         else:
