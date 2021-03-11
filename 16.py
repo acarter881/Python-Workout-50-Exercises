@@ -11,23 +11,17 @@ def dictdiff(d1, d2):
         for k in d1:
             if d1.get(k) == d2.get(k):
                 pass
+            elif k in d1 and k not in d2:
+                diffDict[k] = list((d1[k], None))
             else:
-                if k in d1 and k not in d2:
-                    diffDict[k] = list((d1[k], None))
-                elif k not in d1 and k in d2:
-                    diffDict[k] = list((None, d2[k]))
-                else:
-                    diffDict[k] = list((d1[k], d2[k]))
+                diffDict[k] = list((d1[k], d2[k]))
         for k in d2:
             if d1.get(k) == d2.get(k):
                 pass
+            elif k not in d1 and k in d2:
+                diffDict[k] = list((None, d2[k]))
             else:
-                if k in d1 and k not in d2:
-                    diffDict[k] = list((d1[k], None))
-                elif k not in d1 and k in d2:
-                    diffDict[k] = list((None, d2[k]))
-                else:
-                    diffDict[k] = list((d1[k], d2[k]))
+                diffDict[k] = list((d1[k], d2[k]))
         return diffDict
 
 d1 = {'a': 1, 'b': 2, 'c': 3}
