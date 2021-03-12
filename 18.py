@@ -9,4 +9,3 @@ def get_final_line(fileName):
     return finalRow
 
 print(get_final_line('./Python/list.txt'))
-                
