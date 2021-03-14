@@ -13,7 +13,7 @@ def passwd_to_dict(fileName):
             if row.strip() == '' or row.startswith('#'):
                 pass
             else:
-                usernames[row.split(':')[0]] = row.split(':')[2]
+                usernames[row.split(':')[0]] = int(row.split(':')[2])
     return usernames
 
 print(passwd_to_dict('./Python/unixStyle.txt'))
