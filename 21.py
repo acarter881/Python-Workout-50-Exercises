@@ -13,7 +13,9 @@ def find_longest_word(fileName):
     return theWord
 
 def find_all_longest_words(directory):
+    AYO = {}
     for fileName in os.listdir(directory):
-        print(find_longest_word(fileName))
+        AYO[fileName] = find_longest_word(fileName)
+    return AYO
 
-find_all_longest_words('.')
+print(find_all_longest_words('.'))
