@@ -2,13 +2,11 @@
 import os
 
 def find_longest_word(fileName):
-    maxLength = 0
     theWord = ''
     with open(fileName, 'r') as f:
         for row in f:
             for word in row.split():
-                if len(word) > maxLength:
-                    maxLength = len(word)
+                if len(word) > len(theWord):
                     theWord = word
     return theWord
 
