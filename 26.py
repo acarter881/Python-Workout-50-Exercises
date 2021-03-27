@@ -1,15 +1,6 @@
 #! python3
 import operator
 
-"""
-addition (add)
-subtraction (sub)
-multiplication (mul)
-division (truediv)
-modulus (mod)
-exponentiation (pow)
-"""
-
 def calc(mathString):
     operations = {'+': 'add', 
                   '-': 'sub',
