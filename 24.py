@@ -2,6 +2,7 @@
 import os
 
 """
+Takes a file in the current working directory and writes the reverse of each line to a new text file
 The input:
 abc def
 ghi jkl
