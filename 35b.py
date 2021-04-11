@@ -14,12 +14,8 @@ def gematria_for(singleWord):
 
 def gematria_equal_words(singleWord):
     compareValue = gematria_for(singleWord)
-    sameValues = []
-    with open('C:\\Users\\Alex\\Desktop\\hello\\Python\\words.txt', 'r') as f:
-        for word in f:
-            word = word.strip('\n')
-            if gematria_for(word) == compareValue:
-                sameValues.append(word)
-    return sameValues
+    return [word.strip() 
+           for word in open('C:\\Users\\Alex\\Desktop\\hello\\Python\\words.txt', 'r')
+           if gematria_for(word) == compareValue]
 
 print(gematria_equal_words('cat'))
