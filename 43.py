@@ -9,7 +9,6 @@ class Animal():
     def __repr__(self):
         return f'{self.color} {str(self.species).lower()}, {self.number_of_legs} legs'
 
-
 class Sheep(Animal):
     def __init__(self, color):
         super().__init__(color, 4)
