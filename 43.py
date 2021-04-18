@@ -33,3 +33,10 @@ snake = Snake('green')
 print(snake)
 parrot = Parrot('purple')
 print(parrot)
+
+"""
+white sheep, 4 legs
+gray wolf, 4 legs
+green snake, 0 legs
+purple parrot, 2 legs
+"""
