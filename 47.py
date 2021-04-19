@@ -24,6 +24,4 @@ class Circle:
     
 c = Circle('abc', 6)
 print(list(c))
-
-d = Circle('abcd', 7)
-print(list(d))
+print(list(c))
